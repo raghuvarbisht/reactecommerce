@@ -1,0 +1,49 @@
+.inputWrapper {
+    position: relative;
+    margin: 20px 0px;
+    width: 100%;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 12px 12px 12px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.2s;
+  }
+  
+  .inputField:focus {
+    border-color: #3f51b5;
+  }
+  
+  .label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: white;
+    padding: 0 4px;
+    color: #999;
+    font-size: 16px;
+    transition: 0.2s;
+    pointer-events: none;
+  }
+  
+  .inputField:focus + .label,
+  .inputField:not(:placeholder-shown) + .label {
+    top: -8px;
+    left: 8px;
+    font-size: 12px;
+    color: #3f51b5;
+  }
+  
+  .errorText {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  .errorBorder {
+    border:1px solid red;
+  }

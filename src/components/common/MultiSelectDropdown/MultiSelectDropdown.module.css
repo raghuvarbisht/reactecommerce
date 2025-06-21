@@ -1,0 +1,101 @@
+.wrapper {
+    position: relative;
+    font-family: sans-serif;
+    margin: 20px 0;
+  }
+  
+  .label {
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    font-size: 16px;
+    color: #999;
+    pointer-events: none;
+    background: white;
+    padding: 0 4px;
+    transition: all 0.2s;
+  }
+  
+  .floating {
+    top: -10px;
+    left: 8px;
+    font-size: 12px;
+    color: #3f51b5;
+  }
+  
+  .container {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 14px 12px 6px;
+    cursor: pointer;
+    position: relative;
+    min-height: 48px;
+  }
+  
+  .container.open {
+    border-color: #3f51b5;
+  }
+  
+  .selectedChips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  
+  .chip {
+    background-color: #e3f2fd;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 13px;
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 250px;
+    overflow-y: auto;
+    z-index: 100;
+    border-radius: 0 0 4px 4px;
+  }
+  
+  .searchBox {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .searchBox input {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .option {
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+  
+  .option:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
