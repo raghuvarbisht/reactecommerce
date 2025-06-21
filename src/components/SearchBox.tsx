@@ -15,7 +15,7 @@ const SearchBox = ({ value , onChange , placeholder = "Search ..." , className= 
                 value={value}
                 onChange={onChange}
                 placeholder={placeholder}
-                className="w-full h-[30px] bg-white border border-gray-300 rounded-md px-4 py-2 text-gray-700 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-300"
+                className="w-full h-[50px] bg-white border border-gray-300  px-4 py-2 text-gray-700 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-300"
                 />
         </div>
     )
