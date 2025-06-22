@@ -7,6 +7,7 @@ import Profile from "../pages/Profile";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
 import Products from "../pages/Products";
+import CommonElement from "../pages/CommonElement";
 
 export interface AppRoute {
     path: string;
@@ -22,6 +23,7 @@ export const routes: AppRoute[] = [
  { path: '/contact', element: <Contact /> }, 
  { path: '/profile', element: <Profile />, protected: true },
  { path: '/products', element: <Products />, protected: true },
+ { path: '/elements', element: <CommonElement />, protected: false },
  
 
 ];
